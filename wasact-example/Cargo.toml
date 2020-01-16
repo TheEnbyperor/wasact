@@ -1,0 +1,18 @@
+[package]
+name = "wasact-example"
+version = "0.1.0"
+authors = ["Q 🦄 <q@magicalcodewit.ch>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+console_error_panic_hook = { version = "0.1.1" }
+wee_alloc = { version = "0.4.2" }
+wasact = { path = "../wasact" }
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"

@@ -1,0 +1,12 @@
+[package]
+name = "wasact-macro"
+version = "0.1.0"
+authors = ["Q 🦄 <q@magicalcodewit.ch>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro-hack = "0.5"
+failure = "0.1"
